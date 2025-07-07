@@ -52,6 +52,16 @@ npm install
 docker compose up -d
 # Ejecutar en modo desarrollo
 npm run start
+
+# (Opcional) Usar docker
+docker build -t ink-chat .
+
+# Levantar contenedor
+docker container run -dp 8080:8080 `
+> --name ink-chat `
+> --network backend_ink_network `
+> --env-file .env `
+> ink-chat:1.0.0
 ```
 
 La aplicación estará disponible en <http://localhost:5173>
