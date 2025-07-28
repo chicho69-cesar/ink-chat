@@ -1,8 +1,8 @@
 import { NavLink, useParams } from 'react-router'
+import { useMemo } from 'react'
 
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { useChat } from '../context/chat/useChat'
-import { useMemo } from 'react'
 import { useAuth } from '@/auth/context/useAuth'
 
 export default function ContactList() {
